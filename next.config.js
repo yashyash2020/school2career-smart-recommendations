@@ -1,11 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // تفعيل الميزات التجريبية
-  experimental: {
-    serverActions: true,
-    appDir: true
-  },
-  
   // متغيرات البيئة
   env: {
     NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,

@@ -400,34 +400,26 @@
   perspective: 1000px;
 }
 
-/* خط عربي محسن */
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap');
-
-body {
-  font-family: 'Cairo', 'Tajawal', Arial, sans-serif;
-}
-
 /* تحسين اتجاه النص العربي */
-.rtl-content {
+.rtlContent {
   direction: rtl;
   text-align: right;
 }
 
-.ltr-content {
+.ltrContent {
   direction: ltr;
   text-align: left;
 }
 
 /* إضافة ظلال ناعمة */
-.soft-shadow {
+.softShadow {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.medium-shadow {
+.mediumShadow {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
-.strong-shadow {
+.strongShadow {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
