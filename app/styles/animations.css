@@ -1,0 +1,683 @@
+/* ===================================
+   SCHOOL2CAREER ANIMATION SYSTEM
+   نظام موحد للحركات والتأثيرات مع تحسين الأداء
+   Enhanced with Performance Monitoring & GPU Acceleration
+   =================================== */
+
+/* ===================================
+   0. PERFORMANCE OPTIMIZATIONS (تحسين الأداء)
+   =================================== */
+
+/* Accessibility: Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* GPU Acceleration Classes */
+.sc-performance-optimized {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.sc-gpu-accelerated {
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+/* Memory Efficient Animations */
+.sc-animate-once {
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+/* Mobile Performance Adaptations */
+@media (max-width: 768px) {
+  .sc-particle {
+    animation-duration: 30s !important;
+  }
+  
+  .sc-shape {
+    animation-duration: 25s !important;
+  }
+  
+  .sc-complex-animation {
+    animation-duration: 2s !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .sc-heavy-animation {
+    animation: none !important;
+  }
+}
+
+/* Low Power Mode */
+@media (prefers-reduced-motion: reduce), (max-resolution: 1.5dppx) {
+  .sc-particle,
+  .sc-shape,
+  .sc-background-animation {
+    animation-play-state: paused;
+  }
+}
+
+/* ===================================
+   1. CORE ANIMATIONS (الحركات الأساسية)
+   =================================== */
+
+@keyframes sc-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes sc-fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sc-fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sc-slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes sc-slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes sc-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes sc-rotate-in {
+  from {
+    opacity: 0;
+    transform: rotate(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+
+/* ===================================
+   2. GRADIENT ANIMATIONS (تحريك التدرجات)
+   =================================== */
+
+@keyframes sc-gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes sc-gradient-rotate {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes sc-text-gradient {
+  0%, 100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(30deg);
+  }
+}
+
+/* ===================================
+   3. FLOATING ANIMATIONS (الحركة العائمة)
+   =================================== */
+
+@keyframes sc-float {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(80px, -80px) rotate(120deg);
+  }
+  66% {
+    transform: translate(-80px, 80px) rotate(240deg);
+  }
+}
+
+@keyframes sc-float-gentle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes sc-float-particles {
+  0% {
+    transform: translateY(100vh) scale(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1);
+    opacity: 0;
+  }
+}
+
+/* ===================================
+   4. PULSE & GLOW EFFECTS (النبض والتوهج)
+   =================================== */
+
+@keyframes sc-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes sc-pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(102, 126, 234, 0.6);
+  }
+}
+
+@keyframes sc-neon-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 25px rgba(0, 255, 255, 0.8));
+  }
+}
+
+@keyframes sc-breath {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+}
+
+/* ===================================
+   5. LOADING ANIMATIONS (حركات التحميل)
+   =================================== */
+
+@keyframes sc-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sc-bounce {
+  0%, 20%, 53%, 80%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  40%, 43% {
+    transform: translate3d(0, -30px, 0);
+  }
+  70% {
+    transform: translate3d(0, -15px, 0);
+  }
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+@keyframes sc-wave {
+  0%, 60%, 100% {
+    transform: initial;
+  }
+  30% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes sc-dots {
+  0%, 80%, 100% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ===================================
+   6. HOVER EFFECTS (تأثيرات الماوس)
+   =================================== */
+
+@keyframes sc-hover-lift {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes sc-hover-scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes sc-button-ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.5;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+/* ===================================
+   7. ANIMATION CLASSES (فئات الحركة)
+   =================================== */
+
+/* === Entrance Animations === */
+.sc-animate-fade-in {
+  animation: sc-fade-in var(--sc-duration-normal) var(--sc-ease-out) forwards;
+}
+
+.sc-animate-fade-in-up {
+  animation: sc-fade-in-up var(--sc-duration-slow) var(--sc-ease-out) forwards;
+}
+
+.sc-animate-fade-in-down {
+  animation: sc-fade-in-down var(--sc-duration-slow) var(--sc-ease-out) forwards;
+}
+
+.sc-animate-slide-in-right {
+  animation: sc-slide-in-right var(--sc-duration-slow) var(--sc-ease-out) forwards;
+}
+
+.sc-animate-slide-in-left {
+  animation: sc-slide-in-left var(--sc-duration-slow) var(--sc-ease-out) forwards;
+}
+
+.sc-animate-scale-in {
+  animation: sc-scale-in var(--sc-duration-normal) var(--sc-ease-bounce) forwards;
+}
+
+.sc-animate-rotate-in {
+  animation: sc-rotate-in var(--sc-duration-slow) var(--sc-ease-elastic) forwards;
+}
+
+/* === Continuous Animations === */
+.sc-animate-gradient {
+  background-size: 300% 300%;
+  animation: sc-gradient-shift 8s ease infinite;
+}
+
+.sc-animate-gradient-text {
+  animation: sc-text-gradient 3s ease infinite;
+}
+
+.sc-animate-float {
+  animation: sc-float 20s ease-in-out infinite;
+}
+
+.sc-animate-float-gentle {
+  animation: sc-float-gentle 3s ease-in-out infinite;
+}
+
+.sc-animate-pulse {
+  animation: sc-pulse 2s ease-in-out infinite;
+}
+
+.sc-animate-glow {
+  animation: sc-pulse-glow 2s ease-in-out infinite;
+}
+
+.sc-animate-neon {
+  animation: sc-neon-glow 2s ease-in-out infinite;
+}
+
+.sc-animate-breath {
+  animation: sc-breath 4s ease-in-out infinite;
+}
+
+/* === Loading Animations === */
+.sc-animate-spin {
+  animation: sc-spin 1s linear infinite;
+}
+
+.sc-animate-bounce {
+  animation: sc-bounce 1s infinite;
+}
+
+.sc-animate-wave {
+  animation: sc-wave 1.2s ease-in-out infinite;
+}
+
+/* === Delayed Animations === */
+.sc-animate-delay-1 { animation-delay: 0.1s; }
+.sc-animate-delay-2 { animation-delay: 0.2s; }
+.sc-animate-delay-3 { animation-delay: 0.3s; }
+.sc-animate-delay-4 { animation-delay: 0.4s; }
+.sc-animate-delay-5 { animation-delay: 0.5s; }
+
+/* ===================================
+   8. BACKGROUND ANIMATIONS (الخلفيات المتحركة)
+   =================================== */
+
+.sc-bg-animated {
+  background: linear-gradient(45deg, var(--sc-bg-primary), var(--sc-bg-secondary), var(--sc-bg-tertiary));
+  background-size: 300% 300%;
+  animation: sc-gradient-shift 15s ease infinite;
+}
+
+.sc-floating-shapes {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.sc-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.3;
+  animation: sc-float 20s infinite ease-in-out;
+}
+
+.sc-shape-1 {
+  width: 300px;
+  height: 300px;
+  background: var(--sc-accent-neon);
+  top: -150px;
+  left: -150px;
+  animation-delay: 0s;
+}
+
+.sc-shape-2 {
+  width: 400px;
+  height: 400px;
+  background: var(--sc-accent-purple);
+  bottom: -200px;
+  right: -200px;
+  animation-delay: 5s;
+}
+
+.sc-shape-3 {
+  width: 250px;
+  height: 250px;
+  background: var(--sc-accent-pink);
+  top: 50%;
+  left: 50%;
+  animation-delay: 10s;
+}
+
+/* ===================================
+   9. PARTICLE SYSTEM (نظام الجسيمات المحسن)
+   =================================== */
+
+.sc-particles-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.sc-particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: var(--sc-accent-neon);
+  border-radius: 50%;
+  opacity: 0.4;
+  animation: sc-float-particles 25s linear infinite;
+}
+
+/* تقليل الجسيمات على الأجهزة الضعيفة */
+@media (max-width: 768px) {
+  .sc-particle:nth-child(n+21) {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .sc-particle:nth-child(n+11) {
+    display: none;
+  }
+}
+
+/* ===================================
+   10. INTERSECTION OBSERVER ANIMATIONS
+   =================================== */
+
+.sc-animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all var(--sc-duration-slow) var(--sc-ease-out);
+}
+
+.sc-animate-on-scroll.sc-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sc-animate-on-scroll.sc-from-left {
+  transform: translateX(-50px);
+}
+
+.sc-animate-on-scroll.sc-from-left.sc-visible {
+  transform: translateX(0);
+}
+
+.sc-animate-on-scroll.sc-from-right {
+  transform: translateX(50px);
+}
+
+.sc-animate-on-scroll.sc-from-right.sc-visible {
+  transform: translateX(0);
+}
+
+.sc-animate-on-scroll.sc-scale {
+  transform: scale(0.9);
+}
+
+.sc-animate-on-scroll.sc-scale.sc-visible {
+  transform: scale(1);
+}
+
+/* ===================================
+   11. PERFORMANCE OPTIMIZATIONS
+   =================================== */
+
+/* تحسين الأداء للحركات */
+.sc-performance-optimized {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* تقليل الحركات للأجهزة الضعيفة */
+@media (prefers-reduced-motion: reduce) {
+  .sc-animate-fade-in,
+  .sc-animate-fade-in-up,
+  .sc-animate-fade-in-down,
+  .sc-animate-slide-in-right,
+  .sc-animate-slide-in-left,
+  .sc-animate-scale-in,
+  .sc-animate-rotate-in {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  
+  .sc-animate-gradient,
+  .sc-animate-float,
+  .sc-animate-pulse,
+  .sc-animate-glow,
+  .sc-animate-neon,
+  .sc-animate-breath {
+    animation: none;
+  }
+  
+  .sc-floating-shapes,
+  .sc-particles-container {
+    display: none;
+  }
+}
+
+/* ===================================
+   12. HOVER STATES WITH ANIMATIONS
+   =================================== */
+
+.sc-hover-animated {
+  position: relative;
+  overflow: hidden;
+  transition: all var(--sc-duration-normal) var(--sc-ease-out);
+}
+
+.sc-hover-animated::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+  z-index: 0;
+}
+
+.sc-hover-animated:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.sc-hover-animated:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--sc-shadow-glow);
+}
+
+/* ===================================
+   13. LOADING COMPONENTS
+   =================================== */
+
+.sc-loader-dots {
+  display: flex;
+  gap: var(--sc-space-xs);
+}
+
+.sc-loader-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--sc-accent-neon);
+  border-radius: 50%;
+  animation: sc-dots 1.4s ease-in-out infinite both;
+}
+
+.sc-loader-dot:nth-child(1) { animation-delay: -0.32s; }
+.sc-loader-dot:nth-child(2) { animation-delay: -0.16s; }
+.sc-loader-dot:nth-child(3) { animation-delay: 0s; }
+
+.sc-loader-wave {
+  display: flex;
+  gap: 2px;
+}
+
+.sc-loader-bar {
+  width: 4px;
+  height: 20px;
+  background: var(--sc-accent-neon);
+  animation: sc-wave 1.2s ease-in-out infinite;
+}
+
+.sc-loader-bar:nth-child(1) { animation-delay: 0s; }
+.sc-loader-bar:nth-child(2) { animation-delay: 0.1s; }
+.sc-loader-bar:nth-child(3) { animation-delay: 0.2s; }
+.sc-loader-bar:nth-child(4) { animation-delay: 0.3s; }
+.sc-loader-bar:nth-child(5) { animation-delay: 0.4s; }

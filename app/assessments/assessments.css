@@ -1,0 +1,352 @@
+/* Professional Assessments Page Styles - Separated CSS File */
+
+.professional-assessments-container {
+  min-height: 100vh;
+  background: #0f0f1e;
+  color: #ffffff;
+  overflow-x: hidden;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.professional-bg-animation {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(45deg, #0f0f1e, #1a1a2e, #16213e);
+  background-size: 300% 300%;
+  animation: professionalGradientShift 15s ease infinite;
+}
+
+@keyframes professionalGradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.professional-floating-shapes {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.professional-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.3;
+  animation: professionalFloat 20s infinite ease-in-out;
+}
+
+@keyframes professionalFloat {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  33% { transform: translate(100px, -100px) rotate(120deg); }
+  66% { transform: translate(-100px, 100px) rotate(240deg); }
+}
+
+.professional-shape1 {
+  width: 300px;
+  height: 300px;
+  background: #00ffff;
+  top: -150px;
+  left: -150px;
+  animation-delay: 0s;
+}
+
+.professional-shape2 {
+  width: 400px;
+  height: 400px;
+  background: #a855f7;
+  bottom: -200px;
+  right: -200px;
+  animation-delay: 5s;
+}
+
+.professional-shape3 {
+  width: 250px;
+  height: 250px;
+  background: #ec4899;
+  top: 50%;
+  left: 50%;
+  animation-delay: 10s;
+}
+
+.professional-particles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.professional-particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #00ffff;
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: professionalFloatUp 20s linear infinite;
+}
+
+@keyframes professionalFloatUp {
+  0% {
+    transform: translateY(100vh) scale(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1);
+    opacity: 0;
+  }
+}
+
+.professional-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: rgba(15, 15, 30, 0.98);
+  backdrop-filter: blur(20px);
+  border-bottom: 2px solid rgba(102, 126, 234, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  z-index: 1000;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.professional-back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(118, 75, 162, 0.4);
+}
+
+.professional-back-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(118, 75, 162, 0.6);
+}
+
+.professional-page-title {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.professional-content {
+  padding: 20px 50px 0;
+}
+
+.professional-assessments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.professional-assessment-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border-radius: 25px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.professional-assessment-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.professional-assessment-card:hover::before {
+  left: 100%;
+}
+
+.professional-assessment-card:hover {
+  transform: translateY(-10px) rotateX(-5deg) rotateY(5deg);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+  border-color: #a855f7;
+}
+
+.professional-card-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  margin-bottom: 25px;
+  animation: professionalPulse 2s ease infinite;
+}
+
+@keyframes professionalPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.professional-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.professional-card-description {
+  color: #b8b8c8;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.professional-card-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+}
+
+.professional-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #b8b8c8;
+  font-size: 14px;
+}
+
+.professional-credits-badge {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 5px 15px rgba(240, 147, 251, 0.3);
+}
+
+.professional-action-button {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.professional-action-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.professional-action-button:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.professional-action-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+.professional-action-button:disabled {
+  background: #444;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.professional-action-button:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.professional-fade-in {
+  animation: professionalFadeIn 0.6s ease forwards;
+}
+
+@keyframes professionalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .professional-header {
+    padding: 0 20px;
+  }
+  
+  .professional-page-title {
+    font-size: 20px;
+  }
+  
+  .professional-content {
+    padding: 20px 20px 0;
+  }
+  
+  .professional-assessments-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .professional-assessment-card {
+    padding: 25px;
+  }
+}
