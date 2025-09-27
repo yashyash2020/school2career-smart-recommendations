@@ -47,10 +47,19 @@ NEXTAUTH_SECRET=your_random_secret_key
 2. انقر على **Settings**
 3. انقر على **Environment Variables**
 4. أضف كل متغير على حدة:
+
+**المتغير الأول:**
    - Name: `NEXT_PUBLIC_SUPABASE_URL`
-   - Value: رابط مشروع Supabase
-   - Environment: **Production**, **Preview**, **Development**
-5. كرر العملية لباقي المتغيرات
+   - Value: `https://imobhmzywvzbvyqpzcau.supabase.co`
+   - Environment: ✅ **Production**, ✅ **Preview**, ✅ **Development**
+
+**المتغير الثاني:**
+   - Name: `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+   - Value: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imltb2JobXp5d3Z6YnZ5cXB6Y2F1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTY4NDkzNTEsImV4cCI6MjA3MjQyNTM1MX0.FpUXi86I-o38ecc0S1eJ6E2o1TRgYP-yNmOHqyYO3Pg`
+   - Environment: ✅ **Production**, ✅ **Preview**, ✅ **Development**
+
+5. انقر **Save** لكل متغير
+6. ستتم إعادة النشر تلقائياً
 
 ## 🔧 اختبار الاتصال:
 
