@@ -400,6 +400,8 @@
   perspective: 1000px;
 }
 
+/* CSS Module Classes Only - لا توجد selectors عامة */
+
 /* تحسين اتجاه النص العربي */
 .rtlContent {
   direction: rtl;
