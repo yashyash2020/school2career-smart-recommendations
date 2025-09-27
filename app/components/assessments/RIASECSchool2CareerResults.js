@@ -116,7 +116,7 @@ const RIASECSchool2CareerResults = ({
             fontFamily: 'Cairo, Arial, sans-serif',
             lineHeight: '1.8'
           }}>
-            "{dream_pathway?.motivation_message}"
+            &ldquo;{dream_pathway?.motivation_message}&rdquo;
           </div>
 
           {/* Success Probability */}
@@ -229,7 +229,7 @@ const RIASECSchool2CareerResults = ({
             fontFamily: 'Cairo, Arial, sans-serif',
             lineHeight: '1.6'
           }}>
-            "{algorithmResults.emotional_connection?.inspiration_quote}"
+            &ldquo;{algorithmResults.emotional_connection?.inspiration_quote}&rdquo;
           </div>
         </div>
       </div>
@@ -441,7 +441,7 @@ const RIASECSchool2CareerResults = ({
             color: colors.future,
             fontFamily: 'Cairo, Arial, sans-serif'
           }}>
-            "تذكر: كل حلم كبير بدأ بخطوة صغيرة 🌱"
+            &ldquo;تذكر: كل حلم كبير بدأ بخطوة صغيرة 🌱&rdquo;
           </div>
         </div>
       </div>

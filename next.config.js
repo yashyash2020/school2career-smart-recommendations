@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // ESLint إعدادات
+  eslint: {
+    ignoreDuringBuilds: false,
+    dirs: ['app'],
+  },
+  
   // متغيرات البيئة
   env: {
     NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
