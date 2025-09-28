@@ -1,0 +1,71 @@
+/* ===================================
+   SCHOOL2CAREER - GLOBAL STYLES
+   تحميل جميع الأنظمة الموحدة
+   =================================== */
+
+/* Import Standardized Systems */
+@import url('./styles/design-system.css');
+@import url('./styles/animations.css');
+@import url('./styles/components.css');
+@import url('./styles/dark-theme.css');
+
+/* ===================================
+   GLOBAL OVERRIDES & CUSTOMIZATIONS
+   =================================== */
+
+/* Enhanced Body Styles */
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Enhanced Focus Management */
+*:focus {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--sc-accent-neon);
+  outline-offset: 2px;
+  border-radius: var(--sc-radius-sm);
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  :root {
+    --sc-bg-card: rgba(255, 255, 255, 0.15);
+    --sc-border-primary: rgba(255, 255, 255, 0.3);
+    --sc-text-secondary: #e0e0e0;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .sc-floating-shapes,
+  .sc-particles-container,
+  .sc-animated-background {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
+
+/* Reduced Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .sc-floating-shapes,
+  .sc-particles-container {
+    display: none !important;
+  }
+}

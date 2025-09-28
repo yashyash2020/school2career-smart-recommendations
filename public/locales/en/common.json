@@ -1,0 +1,250 @@
+{
+  "nav": {
+    "home": "Home",
+    "assessments": "Assessments", 
+    "assessments_aria": "Go to assessments page",
+    "careers": "Careers",
+    "education": "Education",
+    "about": "About",
+    "login": "Login",
+    "signup": "Sign Up",
+    "start_now": "Start Now",
+    "user": "User",
+    "dashboard": "Dashboard",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "hero": {
+    "title_1": "Discover Your Future with",
+    "subtitle": "An intelligent assessment platform that helps you discover your abilities and skills and guides you towards the most suitable career path",
+    "start_assessment": "Start Free Assessment",
+    "watch_video": "Watch Introduction Video"
+  },
+  "features": {
+    "comprehensive_assessment": "Comprehensive Assessment",
+    "comprehensive_assessment_desc": "Specialized tests that measure 8 core skills",
+    "instant_results": "Instant Results",
+    "instant_results_desc": "Get a detailed report as soon as you finish the test",
+    "smart_recommendations": "Smart Recommendations",
+    "smart_recommendations_desc": "Personalized advice to develop your skills",
+    "clear_paths": "Clear Paths",
+    "clear_paths_desc": "Well-planned educational and career pathways"
+  },
+  "stats": {
+    "users": "Users",
+    "assessments": "Assessments",
+    "career_paths": "Career Paths",
+    "satisfaction": "Client Satisfaction"
+  },
+  "targets": {
+    "title": "Target Audience",
+    "students": {
+      "title": "Students",
+      "age": "15-18 years",
+      "description": "High school students determining their academic path",
+      "features": {
+        "academic_discovery": "Discover academic interests",
+        "specialization": "Determine suitable specialization",
+        "future_planning": "Plan for the future",
+        "informed_decisions": "Make informed decisions"
+      }
+    },
+    "professionals": {
+      "title": "Professionals",
+      "age": "18+ years",
+      "description": "Professionals looking to develop their career",
+      "features": {
+        "skill_assessment": "Assess professional skills",
+        "development_opportunities": "Discover development opportunities",
+        "promotion_planning": "Plan for promotion",
+        "career_change": "Change career path"
+      }
+    },
+    "organizations": {
+      "title": "Organizations",
+      "size": "500+ employees",
+      "description": "Educational institutions and companies",
+      "features": {
+        "employee_assessment": "Employee assessment",
+        "development_programs": "Development programs",
+        "candidate_selection": "Candidate selection",
+        "team_building": "Team building"
+      }
+    }
+  },
+  "skills": {
+    "title": "What Do We Measure?",
+    "scientific": {
+      "name": "Scientific Skills",
+      "category": "Mathematics, Physics, Chemistry"
+    },
+    "literary": {
+      "name": "Literary Skills",
+      "category": "Languages, History, Geography"
+    },
+    "technical": {
+      "name": "Technical Skills",
+      "category": "Programming, Design, Technology"
+    },
+    "artistic": {
+      "name": "Artistic Skills",
+      "category": "Drawing, Music, Design"
+    },
+    "social": {
+      "name": "Social Skills",
+      "category": "Communication, Leadership, Teamwork"
+    },
+    "critical_thinking": {
+      "name": "Critical Thinking",
+      "category": "Analysis, Problem Solving"
+    },
+    "sports": {
+      "name": "Sports Skills",
+      "category": "Fitness, Sports, Coordination"
+    },
+    "medical": {
+      "name": "Medical Skills",
+      "category": "Health Sciences, Care, Research"
+    }
+  },
+  "paths": {
+    "title": "Career Paths",
+    "explore_more": "Explore More",
+    "science": {
+      "title": "Science & Technology",
+      "subtitle": "For Creators and Innovators",
+      "description": "Fields of medicine, engineering, and technology"
+    },
+    "technology": {
+      "title": "Technology & Programming",
+      "subtitle": "For Tech Enthusiasts",
+      "description": "Software development and information systems"
+    },
+    "arts": {
+      "title": "Arts & Creativity",
+      "subtitle": "For the Artistically Talented",
+      "description": "Design, arts, and media"
+    },
+    "business": {
+      "title": "Business & Management",
+      "subtitle": "For Future Leaders",
+      "description": "Business administration, marketing, and finance"
+    }
+  },
+  "cta": {
+    "title": "Start Your Career Journey Today",
+    "description": "Join thousands of students and professionals who discovered their ideal path",
+    "start_assessment": "Start Assessment",
+    "login": "Login"
+  },
+  "footer": {
+    "copyright": "© 2025 School2Career - All Rights Reserved",
+    "developer": "Developed by Dr. Mohamed Yashar"
+  },
+  "buttons": {
+    "continue": "Continue",
+    "cancel": "Cancel", 
+    "save": "Save",
+    "submit": "Submit",
+    "back": "Back",
+    "next": "Next",
+    "close": "Close",
+    "search": "Search",
+    "start_assessment": "Start Free Assessment",
+    "learn_more": "Learn More",
+    "explore_more": "Explore More"
+  },
+  "status": {
+    "loading": "Loading...",
+    "success": "Success",
+    "error": "Error occurred",
+    "pending": "Pending",
+    "completed": "Completed"
+  },
+  "riasec": {
+    "types": {
+      "realistic": {
+        "name": "Realistic",
+        "description": "Working with hands and tools",
+        "traits": ["Practical", "Independent", "Nature-loving", "Prefers tangible work"],
+        "skills": ["Manual skills", "Physical strength", "Motor coordination", "Working with machines"]
+      },
+      "investigative": {
+        "name": "Investigative",
+        "description": "Research and analysis",
+        "traits": ["Curious", "Analytical", "Logical", "Learning-oriented"],
+        "skills": ["Critical thinking", "Problem solving", "Scientific research", "Analysis"]
+      },
+      "artistic": {
+        "name": "Artistic",
+        "description": "Creativity and expression",
+        "traits": ["Creative", "Sensitive", "Imaginative", "Expressive"],
+        "skills": ["Creativity", "Design", "Artistic expression", "Thinking outside the box"]
+      },
+      "social": {
+        "name": "Social",
+        "description": "Helping others",
+        "traits": ["Cooperative", "Empathetic", "Patient", "Friendly"],
+        "skills": ["Communication", "Listening", "Teaching", "Counseling"]
+      },
+      "enterprising": {
+        "name": "Enterprising",
+        "description": "Leadership and persuasion",
+        "traits": ["Leadership", "Ambitious", "Persuasive", "Confident"],
+        "skills": ["Leadership", "Persuasion", "Negotiation", "Decision making"]
+      },
+      "conventional": {
+        "name": "Conventional",
+        "description": "Organization and precision",
+        "traits": ["Organized", "Precise", "Systematic", "Reliable"],
+        "skills": ["Organization", "Data management", "Attention to detail", "Follow-up"]
+      }
+    },
+    "assessment": {
+      "title": "Discover Your Career Interests",
+      "subtitle": "Holland RIASEC Scientific Model",
+      "description": "60 questions to determine your professional personality with 98% accuracy",
+      "start_button": "Start Assessment Now",
+      "how_it_works": "How Does the Assessment Work?",
+      "features": [
+        "60 diverse and mixed questions to ensure accurate results",
+        "Optimized algorithm for calculating career compatibility",
+        "Comprehensive analysis with consistency and confidence indicators",
+        "Smart career recommendations with multiple alternatives"
+      ],
+      "question_counter": "Question {current} of {total}",
+      "time_left": "Time remaining",
+      "previous": "Previous",
+      "hint": "Think about activities you truly enjoy, not what others expect from you",
+      "answer_options": {
+        "strongly_disagree": "Strongly Dislike",
+        "disagree": "Dislike",
+        "neutral": "Neutral",
+        "agree": "Like",
+        "strongly_agree": "Strongly Like"
+      }
+    },
+    "results": {
+      "title": "🎉 Comprehensive Analysis of Your Professional Personality",
+      "subtitle": "Accurate scientific results based on Holland RIASEC model",
+      "personality_code": "Your Career Personality Code:",
+      "reliability_indicators": "Reliability Indicators",
+      "consistency": "Response Consistency",
+      "profile_clarity": "Profile Clarity",
+      "confidence_score": "Confidence Score",
+      "personality_traits": "Your Personality Traits",
+      "primary_traits": "Primary Traits:",
+      "secondary_traits": "Secondary Traits:",
+      "strong_skills": "Your Strong Skills",
+      "excellent_skills": "Excellent Skills:",
+      "supporting_skills": "Supporting Skills:",
+      "all_dimensions": "Comprehensive Analysis of All Dimensions",
+      "career_recommendations": "Career Paths Suitable for You",
+      "expected_salary": "Expected Salary Range:",
+      "education_paths": "Suggested Educational Paths",
+      "work_environments": "Suitable Work Environments",
+      "time_taken": "Time Taken",
+      "xp_points": "XP Points"
+    }
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "assessments": "Évaluations", 
+    "assessments_aria": "Aller à la page d'évaluations",
+    "careers": "Carrières",
+    "education": "Éducation",
+    "about": "À propos",
+    "login": "Connexion",
+    "signup": "S'inscrire",
+    "start_now": "Commencer maintenant",
+    "user": "Utilisateur",
+    "dashboard": "Tableau de bord",
+    "profile": "Profil",
+    "logout": "Déconnexion"
+  },
+  "hero": {
+    "title_1": "Découvrez votre avenir avec",
+    "subtitle": "Une plateforme d'évaluation intelligente qui vous aide à découvrir vos capacités et compétences et vous guide vers le parcours professionnel le plus adapté",
+    "start_assessment": "Commencer l'évaluation gratuite",
+    "watch_video": "Regarder la vidéo d'introduction"
+  },
+  "features": {
+    "comprehensive_assessment": "Évaluation complète",
+    "comprehensive_assessment_desc": "Tests spécialisés qui mesurent 8 compétences fondamentales",
+    "instant_results": "Résultats instantanés",
+    "instant_results_desc": "Obtenez un rapport détaillé dès que vous terminez le test",
+    "smart_recommendations": "Recommandations intelligentes",
+    "smart_recommendations_desc": "Conseils personnalisés pour développer vos compétences",
+    "clear_paths": "Parcours clairs",
+    "clear_paths_desc": "Voies éducatives et professionnelles bien planifiées"
+  },
+  "stats": {
+    "users": "Utilisateurs",
+    "assessments": "Évaluations",
+    "career_paths": "Parcours professionnels",
+    "satisfaction": "Satisfaction client"
+  },
+  "targets": {
+    "title": "Public cible",
+    "students": {
+      "title": "Étudiants",
+      "age": "15-18 ans",
+      "description": "Lycéens déterminant leur parcours académique",
+      "features": {
+        "academic_discovery": "Découvrir les intérêts académiques",
+        "specialization": "Déterminer la spécialisation appropriée",
+        "future_planning": "Planifier l'avenir",
+        "informed_decisions": "Prendre des décisions éclairées"
+      }
+    },
+    "professionals": {
+      "title": "Professionnels",
+      "age": "18+ ans",
+      "description": "Professionnels cherchant à développer leur carrière",
+      "features": {
+        "skill_assessment": "Évaluer les compétences professionnelles",
+        "development_opportunities": "Découvrir les opportunités de développement",
+        "promotion_planning": "Planifier la promotion",
+        "career_change": "Changer de parcours professionnel"
+      }
+    },
+    "organizations": {
+      "title": "Organisations",
+      "size": "500+ employés",
+      "description": "Institutions éducatives et entreprises",
+      "features": {
+        "employee_assessment": "Évaluation des employés",
+        "development_programs": "Programmes de développement",
+        "candidate_selection": "Sélection des candidats",
+        "team_building": "Constitution d'équipes"
+      }
+    }
+  },
+  "skills": {
+    "title": "Que mesurons-nous ?",
+    "scientific": {
+      "name": "Compétences scientifiques",
+      "category": "Mathématiques, Physique, Chimie"
+    },
+    "literary": {
+      "name": "Compétences littéraires",
+      "category": "Langues, Histoire, Géographie"
+    },
+    "technical": {
+      "name": "Compétences techniques",
+      "category": "Programmation, Design, Technologie"
+    },
+    "artistic": {
+      "name": "Compétences artistiques",
+      "category": "Dessin, Musique, Design"
+    },
+    "social": {
+      "name": "Compétences sociales",
+      "category": "Communication, Leadership, Travail d'équipe"
+    },
+    "critical_thinking": {
+      "name": "Pensée critique",
+      "category": "Analyse, Résolution de problèmes"
+    },
+    "sports": {
+      "name": "Compétences sportives",
+      "category": "Condition physique, Sports, Coordination"
+    },
+    "medical": {
+      "name": "Compétences médicales",
+      "category": "Sciences de la santé, Soins, Recherche"
+    }
+  },
+  "paths": {
+    "title": "Parcours professionnels",
+    "explore_more": "Explorer davantage",
+    "science": {
+      "title": "Sciences et technologie",
+      "subtitle": "Pour les créateurs et innovateurs",
+      "description": "Domaines de la médecine, de l'ingénierie et de la technologie"
+    },
+    "technology": {
+      "title": "Technologie et programmation",
+      "subtitle": "Pour les passionnés de technologie",
+      "description": "Développement logiciel et systèmes d'information"
+    },
+    "arts": {
+      "title": "Arts et créativité",
+      "subtitle": "Pour les talents artistiques",
+      "description": "Design, arts et médias"
+    },
+    "business": {
+      "title": "Affaires et gestion",
+      "subtitle": "Pour les futurs leaders",
+      "description": "Administration des affaires, marketing et finance"
+    }
+  },
+  "cta": {
+    "title": "Commencez votre parcours professionnel aujourd'hui",
+    "description": "Rejoignez des milliers d'étudiants et de professionnels qui ont découvert leur voie idéale",
+    "start_assessment": "Commencer l'évaluation",
+    "login": "Connexion"
+  },
+  "footer": {
+    "copyright": "© 2025 School2Career - Tous droits réservés",
+    "developer": "Développé par Dr. Mohamed Yashar"
+  },
+  "buttons": {
+    "continue": "Continuer",
+    "cancel": "Annuler", 
+    "save": "Enregistrer",
+    "submit": "Soumettre",
+    "back": "Retour",
+    "next": "Suivant",
+    "close": "Fermer",
+    "search": "Rechercher",
+    "start_assessment": "Commencer l'évaluation gratuite",
+    "learn_more": "En savoir plus",
+    "explore_more": "Explorer davantage"
+  },
+  "status": {
+    "loading": "Chargement...",
+    "success": "Succès",
+    "error": "Erreur survenue",
+    "pending": "En attente",
+    "completed": "Terminé"
+  },
+  "riasec": {
+    "types": {
+      "realistic": {
+        "name": "Réaliste",
+        "description": "Travailler avec les mains et les outils",
+        "traits": ["Pratique", "Indépendant", "Amateur de nature", "Préfère le travail tangible"],
+        "skills": ["Compétences manuelles", "Force physique", "Coordination motrice", "Travail avec les machines"]
+      },
+      "investigative": {
+        "name": "Investigateur",
+        "description": "Recherche et analyse",
+        "traits": ["Curieux", "Analytique", "Logique", "Orienté apprentissage"],
+        "skills": ["Pensée critique", "Résolution de problèmes", "Recherche scientifique", "Analyse"]
+      },
+      "artistic": {
+        "name": "Artistique",
+        "description": "Créativité et expression",
+        "traits": ["Créatif", "Sensible", "Imaginatif", "Expressif"],
+        "skills": ["Créativité", "Design", "Expression artistique", "Pensée créative"]
+      },
+      "social": {
+        "name": "Social",
+        "description": "Aider les autres",
+        "traits": ["Coopératif", "Empathique", "Patient", "Amical"],
+        "skills": ["Communication", "Écoute", "Enseignement", "Conseil"]
+      },
+      "enterprising": {
+        "name": "Entreprenant",
+        "description": "Leadership et persuasion",
+        "traits": ["Leader", "Ambitieux", "Persuasif", "Confiant"],
+        "skills": ["Leadership", "Persuasion", "Négociation", "Prise de décisions"]
+      },
+      "conventional": {
+        "name": "Conventionnel",
+        "description": "Organisation et précision",
+        "traits": ["Organisé", "Précis", "Systématique", "Fiable"],
+        "skills": ["Organisation", "Gestion des données", "Attention aux détails", "Suivi"]
+      }
+    },
+    "assessment": {
+      "title": "Découvrez vos intérêts professionnels",
+      "subtitle": "Modèle scientifique Holland RIASEC",
+      "description": "60 questions pour déterminer votre personnalité professionnelle avec 98% de précision",
+      "start_button": "Commencer l'évaluation maintenant",
+      "how_it_works": "Comment fonctionne l'évaluation ?",
+      "features": [
+        "60 questions diverses et mixtes pour assurer des résultats précis",
+        "Algorithme optimisé pour calculer la compatibilité professionnelle",
+        "Analyse complète avec indicateurs de cohérence et de confiance",
+        "Recommandations professionnelles intelligentes avec alternatives multiples"
+      ],
+      "question_counter": "Question {current} sur {total}",
+      "time_left": "Temps restant",
+      "previous": "Précédent",
+      "hint": "Pensez aux activités que vous appréciez vraiment, pas à ce que les autres attendent de vous",
+      "answer_options": {
+        "strongly_disagree": "N'aime pas du tout",
+        "disagree": "N'aime pas",
+        "neutral": "Neutre",
+        "agree": "Aime",
+        "strongly_agree": "Aime beaucoup"
+      }
+    },
+    "results": {
+      "title": "🎉 Analyse complète de votre personnalité professionnelle",
+      "subtitle": "Résultats scientifiques précis basés sur le modèle Holland RIASEC",
+      "personality_code": "Code de votre personnalité professionnelle :",
+      "reliability_indicators": "Indicateurs de fiabilité",
+      "consistency": "Cohérence des réponses",
+      "profile_clarity": "Clarté du profil",
+      "confidence_score": "Score de confiance",
+      "personality_traits": "Traits de votre personnalité",
+      "primary_traits": "Traits principaux :",
+      "secondary_traits": "Traits secondaires :",
+      "strong_skills": "Vos compétences fortes",
+      "excellent_skills": "Compétences excellentes :",
+      "supporting_skills": "Compétences de soutien :",
+      "all_dimensions": "Analyse complète de toutes les dimensions",
+      "career_recommendations": "Parcours professionnels adaptés pour vous",
+      "expected_salary": "Fourchette de salaire attendue :",
+      "education_paths": "Parcours éducatifs suggérés",
+      "work_environments": "Environnements de travail appropriés",
+      "time_taken": "Temps pris",
+      "xp_points": "Points XP"
+    }
+  }
+}
